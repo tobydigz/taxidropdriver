@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <size android:height="45dp"
+        android:width="60dp"
+        />
+
+
+    <gradient android:startColor="@color/dream_she_dressed_me"
+        android:endColor="@color/dream_she_dressed_me2"
+        android:angle="45"
+        android:type="linear"
+        />
+
+</shape>

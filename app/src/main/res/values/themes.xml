@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="UServMain">#2196F3</color>
+    <color name="UServSec1">#42A5F5</color>
+    <color name="UServSec2">#1E88E5</color>
+    <color name="UservSec3">#1565C0</color>
+    <color name="UServSec4">#0D47A1</color>
+    <color name="UServSec5">#E3F2FD</color>
+    <color name="plain">#83ffffff</color>
+    <color name="dream_grey">#343838</color>
+    <color name="dream_grey2">#646b6b</color>
+    <color name="dream_LIOHU4">#005f6b</color>
+    <color name="dream_LIOHU42">#003238</color>
+    <color name="dream_deeper">#008c9e</color>
+    <color name="dream_she_dressed_me">#00b4cc</color>
+    <color name="dream_she_dressed_me2">#008799</color>
+    <color name="dream_aqua_burst">#00dffc</color>
+    <color name="dream_aqua_burst2">#00b2c9</color>
+    <color name="sinch_purple">#ff63029d</color>
+    <color name="off_white">#fffafafa</color>
+    <color name="dark_gray">#ffb3b3b3</color>
+    <color name="very_dark_gray">#636363</color>
+</resources>

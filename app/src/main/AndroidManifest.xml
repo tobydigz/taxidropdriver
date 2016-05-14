@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.digzdigital.eservicedriver">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission android:name="com.example.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".drivLogin"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".messaging.MessagingActivity"/>
+
+        <activity-alias
+            android:name=".Launcher"
+            android:targetActivity=".MainActivity">
+
+            <intent-filter>
+                <action android:name="com.digzdigital.eservicedriver.drivdash" />
+                <category android:name="android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity-alias>
+
+        <activity android:name=".StatusActivity" />
+
+        <activity android:name=".AboutActivity" />
+
+        <service android:name=".TrackingService" />
+
+        <service android:name=".messaging.MessageService" />
+
+        <service android:name=".TrackingService$HideNotificationService" />
+
+
+        <receiver android:name=".AutostartReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
